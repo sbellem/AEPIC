@@ -31,7 +31,7 @@ sudo apt install -y g++-11
 
 build sgx-step SDK and library
 ```bash
-git submodule init
+git submodule update --init
 cd sgx-step
 cd sdk/intel-sdk/ && ./install_SGX_SDK.sh && source /opt/intel/sgxsdk/environment
 cd libsgxstep && make && cd ..
